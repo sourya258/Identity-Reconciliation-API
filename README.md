@@ -48,7 +48,7 @@ This API consolidates contact information across multiple purchases by linking d
    python
    
    Then, execute the following:
-
+   ```bash
    from flask_rest import app,db
    with app.app_context():
         db.create_all()
