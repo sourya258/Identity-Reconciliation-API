@@ -43,11 +43,21 @@ This API consolidates contact information across multiple purchases by linking d
    flask db migrate -m "Initial migration"
    flask db upgrade
 
-6. Run the Application
+6. Initialize the Database (Run in Python Shell) Open a terminal and run:
+   
+   python
+   
+   Then, execute the following:
+
+   from flask_rest import app,db
+   with app.app_context():
+        db.create_all()
+
+8. Run the Application
 
    python flask_rest.py
 
-7. Run Tests
+9. Run Tests
 
    pytest test_api.py
 
