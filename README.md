@@ -34,7 +34,7 @@ This API consolidates contact information across multiple purchases by linking d
 
    Create a PostgreSQL database (contact_db).
    
-   Update app.config['SQLALCHEMY_DATABASE_URI'] in app.py with your DB credentials.
+   Update app.config['SQLALCHEMY_DATABASE_URI'] in app.py with your DB credentials (username & password).
 
 
 5. Run Database Migrations
