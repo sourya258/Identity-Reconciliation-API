@@ -21,13 +21,13 @@ This API consolidates contact information across multiple purchases by linking d
    cd identity-reconciliation-api
 
 2. Set Up Virtual Environment
-
+   ```bash
    python -m venv venv
    source venv/bin/activate  # For Linux/Mac
    venv\Scripts\activate  # For Windows
 
 3. Install Dependencies
-
+   ```bash
    pip install -r requirements.txt
 
 4. Set Up PostgreSQL Database
@@ -38,7 +38,7 @@ This API consolidates contact information across multiple purchases by linking d
 
 
 5. Run Database Migrations
-   
+   ```bash
    flask db init
    flask db migrate -m "Initial migration"
    flask db upgrade
@@ -54,11 +54,11 @@ This API consolidates contact information across multiple purchases by linking d
         db.create_all()
 
 8. Run the Application
-
+   ```bash
    python flask_rest.py
 
 9. Run Tests
-
+   ```bash
    pytest test_api.py
 
 
