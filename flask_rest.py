@@ -9,7 +9,7 @@ import logging
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:gublu%40sql9@localhost/contact_db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://username:password@localhost/contact_db"
 app.config['SQLALCHEMY_TRACK_MODIFCATIONS'] = False
 db = SQLAlchemy(app)
 limiter = Limiter(get_remote_address, app=app, default_limits=['7200 per day', '300 per hour'])
